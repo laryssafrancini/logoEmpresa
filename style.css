@@ -1,0 +1,39 @@
+body {
+  background: #000625;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 1;
+}
+
+.logo {
+  font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #1e4388, #2a5298, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  animation: glow 3s infinite alternate;
+}
+
+.logo span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 5px;
+  letter-spacing: 3px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #1e3c72, 0 0 10px #6a11cb;
+  }
+  to {
+    text-shadow: 0 0 20px #2575fc, 0 0 40px #6a11cb;
+  }
+}
